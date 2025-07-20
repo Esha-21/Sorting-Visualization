@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Search Visualizer - Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 1em 0;
+    }
+    .nav-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1em;
+    }
+    .logo {
+      font-size: 1.5em;
+      color: white;
+      text-decoration: none;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1em;
+    }
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+    }
+    main {
+      max-width: 1000px;
+      margin: 2em auto;
+      padding: 0 1em;
+    }
+    section {
+      background-color: white;
+      padding: 1em;
+      margin-bottom: 1em;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container" role="navigation" aria-label="Primary Navigation">
+      <a href="#" class="logo">Search Visualizer</a>
+      <ul class="nav-links">
+        <li><a href="sorting.html" tabindex="0">Sorting</a></li>
+        <li><a href="searching.html" tabindex="0">Searching</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section>
+      <h2>Bubble Sort</h2>
+      <p>Bubble Sort is a simple sorting algorithm that works by repeatedly comparing adjacent elements and swapping them if they are in the wrong order. It continues doing this until the array is fully sorted.</p>
+      <p><strong>Time Complexity:</strong> O(n²) average and worst case, O(n) best case (optimized).</p>
+    </section>
+
+    <section>
+      <h2>Selection Sort</h2>
+      <p>Selection Sort works by selecting the smallest element from the unsorted part of the array and swapping it with the first unsorted element. It continues this process until the array is sorted.</p>
+      <p><strong>Time Complexity:</strong> O(n²) in all cases. It's simple but not efficient for large lists.</p>
+    </section>
+
+    <section>
+      <h2>Linear Search</h2>
+      <p>Linear Search goes through each element in the list one by one until it finds the target value or reaches the end. It's simple and requires no sorting.</p>
+      <p><strong>Time Complexity:</strong> O(n)</p>
+    </section>
+
+    <section>
+      <h2>Binary Search</h2>
+      <p>Binary Search is an efficient algorithm for finding an item from a sorted list of items. It works by repeatedly dividing the search interval in half.</p>
+      <p><strong>Time Complexity:</strong> O(log n)</p>
+      <p><strong>Note:</strong> Works only on sorted data.</p>
+    </section>
+    <section>
+      <h2>Merge Sort</h2>
+      <p>Merge Sort is a divide-and-conquer algorithm that divides the array into halves, sorts each half, and then merges them back together.</p>
+      <p><strong>Time Complexity:</strong> O(n log n) in all cases.</p>
+    </section>
+    <section> 
+      <h2>Quick Sort</h2>
+      <p>Quick Sort is a highly efficient sorting algorithm that uses a divide-and-conquer strategy. It selects a 'pivot' element and partitions the other elements into two sub-arrays according to whether they are less than or greater than the pivot.</p>
+      <p><strong>Time Complexity:</strong> O(n log n) on average, O(n²) in the worst case.</p>    
+    </section>
+    <section>
+      <p> Builds the final sorted array (or list) one item at a time. It iterates through the input elements and removes one element at a time, finds the place it belongs within the already sorted list, and inserts it there.</p>
+<p><strong>Time Complexity:</strong> 
+Worst-case: O(n²)
+Average-case: O(nlog n)
+Best-case: O(nlogn)</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 1em; background-color: #333; color: white;">
+    <p>&copy; 2023 Search Visualizer. All rights reserved.</p>
+  </footer>
+</main>
+</body>
+</html>
